@@ -15,20 +15,16 @@ import {NzInputGroupComponent} from "ng-zorro-antd/input";
 export class AppComponent {
   suffixIconSearch: any;
 
-  numero: string = ''; // Variable para almacenar el número binario ingresado por el usuario
-  resultado: number | string = ''; // Variable para almacenar el resultado de la conversión
+  numero: string = '';
+  resultado: number | string = '';
 
   constructor() { }
 
-  // Método para convertir el número binario a decimal
   convertir(): void {
-    // Verificar si se ha ingresado un número binario válido
     if (!/^[01]+$/.test(this.numero)) {
       this.resultado = 'Por favor, ingresa un número binario válido.';
       return;
     }
-
-    // Convertir el número binario a decimal
     this.resultado = parseInt(this.numero, 2);
   }
 
