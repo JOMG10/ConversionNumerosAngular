@@ -1,15 +1,19 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {ConversionModalComponent} from "./conversion-modal/conversion-modal.component";
+import {NzTabComponent, NzTabSetComponent} from "ng-zorro-antd/tabs";
+import {FormsModule} from "@angular/forms";
+import {NzInputGroupComponent} from "ng-zorro-antd/input";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ConversionModalComponent],
+  imports: [RouterOutlet, NzTabComponent, NzTabSetComponent, FormsModule, NzInputGroupComponent],
   templateUrl: './app.component.html',
 
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  suffixIconSearch: any;
+  nombre: any;
 
 }

@@ -1,13 +1,21 @@
-.forma{
+h1{
   text-align: center;
-  color: white;
-  background-color: rgb(72, 85, 85);
-  width: 60%;
-  height: 300px;
-  margin-left: 20%;
-  margin-top: 100px;
 }
 
-#validacion{
-  color: red;
+.resultado{
+  font-size: 20pt;
+
+}
+
+
+.contenedor {
+  padding: 50px;
+  width: 500px;
+  height: 400px;
+  margin: 0 auto; /* Esto centrará el elemento horizontalmente */
+  text-align: center; /* Esto centrará el contenido dentro del contenedor */
+}
+
+.btn{
+  margin: 5px;
 }
